@@ -1,10 +1,42 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Блог</title>
         <meta charset="UTF-8">
+        <link rel="shortcut icon" href="resources/logo.png" type="image/x-icon">
+        <link rel="icon" href="resources/logo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="resources/styles.css">
     </head>
     <body>
-        <h1>Привіт! Вітаю!</h1>
-        <p>Привіт, за цим справді боляче слідкувати. Тут він зневажає всю мудрість і не прагне її отримати, бо буде звільнений від потреб. Ніколи не дозволяйте нікому шукати правду деінде, тому що ті, хто їх хвалить, не знають гірших звинувачень.</p>
+        <h1>Пости</h1>
+        <button id="add_button">
+            <img src="resources/add_icon.png" width="50px" height="50px">
+        </button>
+        <div id="add_post" class="hidden">
+            <form action="post.html" method="get">
+                <input type="text" name="title" placeholder="Заголовок" required>
+                <textarea name="content" placeholder="Вміст" required></textarea>
+                <button type="submit">Додати пост</button>
+            </form>
+        </div>
+        <a href="post.html">
+            <div class="post">
+                <h2>Лестощі</h2>
+                <p>Для тих, хто народився засліпленим лестощами, тих, хто насолоджується найменшою мірою і хто не передбачає всіх страждань, тікайте від речей тих, хто їх звинувачує, і слідуйте за ними!</p>
+            </div>
+        </a>
+        <a href="post.html">
+            <div class="post">
+                <h2>Винахідник</h2>
+                <p>Це винахідник блаженного, який справді бере на себе обов’язки, обов’язки, які слід брати не від речей, як ми звинувачуємо, породжених деякою м’якістю у відкиданні насолод, забезпечуючи слова.</p>
+            </div>
+        </a>
+        <a href="post.html">
+            <div class="post">
+                <h2>Біль</h2>
+                <p>Який біль станеться з нашим розумом, але наш біль змусить нас докоряти насолоді наших шляхів! У подібних речах немає помилок, і кожен має. Найдостойніший, печалі.</p>
+            </div>
+        </a>
+        <script src="index.js"></script>
     </body>
 </html>
